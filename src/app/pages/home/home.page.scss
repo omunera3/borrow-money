@@ -1,0 +1,26 @@
+.main-container{
+  height: calc(100% - 0px);
+  background-image: url('/assets/img/fondo.jpeg');
+}
+.container-button{
+  height: calc(100% - 500px);
+  margin: 58px 21px;
+  text-align: center;
+  place-items: center;
+  box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 5%);
+  background-color: #ffff;
+  border-radius: 6px;
+}
+.container-secundary{
+  flex-wrap: nowrap !important;
+  width: 79vw;
+}
+ion-icon{
+  margin-left: 14px;
+}
+ion-buttons{
+  height: 100px;
+}
+ion-button{
+  height: 100px;
+}
