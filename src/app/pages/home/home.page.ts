@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -11,6 +12,11 @@ export class HomePage {
   people: 'Personas'
   };
 
-  constructor() {}
+  constructor(private navCtrl: NavController) {}
+
+
+  goToForm(){
+    this.navCtrl.navigateForward('/form-data');
+  }
 
 }
