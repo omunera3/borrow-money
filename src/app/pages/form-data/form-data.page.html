@@ -10,9 +10,42 @@
     </ion-buttons>
 </ion-header>
 
-<ion-content class="row">
-  <div class=" row main-container-form text-center">
-    <div class="row m-0 container-form justify-content-center">
+<ion-content class="row m-0">
+  <div class="row m-0 main-container-form text-center">
+    <div class="row  container-form justify-content-center">
+      <ion-list>
+        <ion-item>
+          <ion-label>{{titleLabel.name}}</ion-label>
+          <ion-input placeholder="Escriba su nombre:"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>{{titleLabel.lastName}}</ion-label>
+          <ion-input placeholder="Escriba su Apellido:"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>{{titleLabel.date}}</ion-label>
+          <ion-input type="date"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>{{titleLabel.amount}}</ion-label>
+          <ion-input type="number" placeholder="Escriba el monto a prestar:"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>{{titleLabel.dues}}</ion-label>
+          <ion-select></ion-select>
+        </ion-item>
+      </ion-list>
+
+      <ion-footer>
+        <ion-buttons>
+          <ion-button>{{nameButtons.cancel}}</ion-button>
+          <ion-button>{{nameButtons.save}}</ion-button>
+        </ion-buttons>
+      </ion-footer>
 
     </div>
   </div>

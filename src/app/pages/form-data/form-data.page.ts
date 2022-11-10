@@ -7,6 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormDataPage implements OnInit {
 
+  titleLabel = {
+    name: 'Nombre:',
+    lastName: 'Apellido:',
+    date: 'Fecha de prestamo:',
+    amount: 'Monto:',
+    dues: 'Número de cuotas:'
+  };
+  nameButtons = {
+    cancel: 'Cancelar',
+    save: 'Guardar'
+  };
   constructor() { }
 
   ngOnInit() {
